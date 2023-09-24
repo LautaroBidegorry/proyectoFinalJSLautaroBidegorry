@@ -1,0 +1,65 @@
+@import 'variables';
+
+
+
+main {
+    background-color: $Grayish-blue;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.titulo-principal {
+    color: $Light-grayishblue;
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles {
+    background-color: $Dark-grayish-blue;
+    color: $Light-grayishblue;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 5px solid;
+    border-color: $Pale-oragne;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo {
+    font-size: 1rem;
+}
+
+.producto-agregar {
+    border: 0;
+    background-color: $White;
+    color: $Black;
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid $Pale-oragne;
+    transition: background-color .2s, color .2s;
+    font-weight: 800;
+}
+
+.producto-agregar:hover {
+    background-color: $Orange;
+    color: $White;
+}
+
+

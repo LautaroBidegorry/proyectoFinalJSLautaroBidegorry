@@ -1,0 +1,71 @@
+@import 'variables';
+
+header {
+    padding: 2rem;
+    padding-right: 0;
+    color: $Orange;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $Purple;
+
+    .logo {
+        font-weight: 800;
+        font-size: 4.3rem;
+        padding-bottom: 3rem;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        margin: 1.5rem 5rem;
+        .boton-menu {
+            background-color:transparent;
+            border: 0;
+            color: $Orange;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 700;
+            padding: 1rem;
+            font-size: 1.3rem;
+            border-radius: 15px;
+        }
+        
+        .boton-menu.active {
+            background-color: $Dark-grayish-blue;
+            color: $Orange;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            position: relative;
+        }
+    }
+    
+    .numerito {
+        background-color: transparent;
+        color: $Orange;
+        padding: .15rem .25rem;
+        border-radius: .25rem;
+    }
+    
+    .boton-carrito.active .numerito {
+        background-color: $Very-vark-blue;
+        color: $Orange;
+    }
+}
+
+.boton-menu > i.bi-hand-index-thumb-fill,
+.boton-menu > i.bi-hand-index-thumb {
+    transform: rotateZ(90deg);
+}
+
+
+
+
+
+
+
+
+
